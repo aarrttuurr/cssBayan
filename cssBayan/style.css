@@ -1,1 +1,41 @@
+body {
+    background: #e9e7db;
+    font-family: 'Arial Black', Arial, sans-serif;
+}
+
+.bayan__container {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.bayan__header {
+    font-size: 32px;
+}
+
+.bayan__string {
+    display: flex;
+    flex-direction: column;
+}
+
+.bayan__input {
+    display: none;
+}
+
+.bayan__label {
+    font-size: 22px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bayan__label::after {
+    content: '+';
+}
+
+.meme__wrp {
+    max-width: 400px;
+    align-self: center;
+}
+
 
