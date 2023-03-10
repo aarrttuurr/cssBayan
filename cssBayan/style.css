@@ -10,11 +10,19 @@ body {
 
 .bayan__header {
     font-size: 32px;
+    margin-bottom: 20px;
 }
 
 .bayan__string {
     display: flex;
     flex-direction: column;
+}
+
+.bayan__string::before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color: #0000002e;
 }
 
 .bayan__input {
@@ -27,15 +35,32 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: blue;
+    transition: color 0.3s ease;
 }
 
 .bayan__label::after {
     content: '+';
+    display: none;
 }
 
 .meme__wrp {
+    display: none;
     max-width: 400px;
     align-self: center;
+    transition: all 0.3s ease;
+}
+
+.bayan__container:hover .bayan__label {
+    color: unset;
+}
+
+.bayan__container:hover .bayan__label::after {
+    display: block;
+}
+
+.bayan__label:hover ~ .meme__wrp {
+    display: block;
 }
 
 
