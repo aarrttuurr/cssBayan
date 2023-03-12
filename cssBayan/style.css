@@ -5,12 +5,12 @@ body {
 
 .bayan__container {
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 1.5rem auto;
 }
 
 .bayan__header {
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .bayan__string {
@@ -31,7 +31,7 @@ body {
 
 .bayan__label {
     font-size: 22px;
-    height: 50px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,11 +44,25 @@ body {
     display: none;
 }
 
-.meme__wrp {
-    display: none;
-    max-width: 400px;
+/*.meme__wrp {
+    visibility: hidden;
+    opacity: 0;
+    max-width: 40vw;
     align-self: center;
-    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    transition: opacity .6s ease, visibility .5s ease, height .4s ease;
+    transition: all .5s ease;
+    height: 0;
+}*/
+
+.meme {
+    align-self: center;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    max-width: 40vw;
+    transition: height .4s ease, width .4s ease, opacity .3s ease-in .1s, margin-bottom .4s;
 }
 
 .bayan__container:hover .bayan__label {
@@ -59,8 +73,17 @@ body {
     display: block;
 }
 
-.bayan__label:hover ~ .meme__wrp {
-    display: block;
+/*.bayan__label:hover ~ .meme,
+.bayan__input:checked + .bayan__label + .meme {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}*/
+
+.bayan__string:hover .meme,
+.bayan__input:checked + .bayan__label + .meme {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 2rem;
 }
-
-
