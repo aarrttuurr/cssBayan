@@ -29,7 +29,7 @@ body {
 }
 
 .bayan__label {
-    font-size: 1rem;
+    font-size: 0.75rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,6 +71,12 @@ body {
 
 .bayan__label:hover {
     cursor: pointer;
+}
+
+@media (min-width: 400px) {
+    .bayan__label {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 768px) {
