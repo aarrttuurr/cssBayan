@@ -120,27 +120,48 @@ body {
         color: blue;
     }
     
-    .plus {
-        visibility: hidden;
-    }
-
     .meme {
         max-width: 45vw;
     }
 
-    .bayan__input:checked + .bayan__label,
-    .bayan__container:hover .bayan__label {
+    .bayan__input:checked + .bayan__label/*,
+    .bayan__container:hover .bayan__label*/ {
         color: unset;
     }
 
-    .bayan__input:active ~ .bayan__label {
+    /*.bayan__input:active ~ .bayan__label {
         color:blue;
-    }
+    }*/
 
     .bayan__input:checked + .bayan__label .meme {
         margin-bottom: 1.5rem;
     }
 
+    /*.bayan__container:hover .plus{
+        visibility: visible;
+    }
+
+    .bayan__label:hover .plus{
+        transform: rotate(45deg) scale(1.5);
+    }
+
+    .bayan__label:hover .meme {
+        height: 100%;
+        width: 100%;
+        opacity: 1;
+        margin-bottom: 1rem;
+    }*/
+}
+
+@media (any-hover: hover) {
+    .plus {
+        visibility: hidden;
+    }
+
+    .bayan__container:hover .bayan__label {
+        color: unset;
+    }
+    
     .bayan__container:hover .plus{
         visibility: visible;
     }
